@@ -1,9 +1,7 @@
 import { Image } from 'expo-image';
-import { Link } from 'expo-router';
-import { Text, View } from 'react-native';
+import { Linking, Pressable, Text, View } from 'react-native';
 import profilePicture from "../assets/images/profile-picture.jpeg";
 import "../global.css";
-
 
 export default function Index() {
   return(
@@ -22,12 +20,24 @@ export default function Index() {
       <Text className="text-lg text-lime-300 tracking-wide mt-1 mb-4">Johannesburg, South Africa</Text>
       <Text className="text-white my-6">'Front-end developer and avid reader.'</Text>
       <View className="flex flex-col gap-6 w-full mt-6">
-        <Link href="https://github.com/inhamo" className="bg-gray-600 py-4 text-lg text-white rounded-xl font-semibold
-        text-center tracking-wider"><Text>Github</Text></Link>
-        <Link href="https://www.frontendmentor.io/profile/inhamo" className="bg-gray-600 py-4 text-lg text-white rounded-xl font-semibold
-        text-center tracking-wider"><Text>Frontend Mentor</Text></Link>
-        <Link href="https://www.linkedin.com/in/innocent-nhamo-467008254/" className="bg-gray-600 py-4 text-lg text-white rounded-xl font-semibold
-        text-center tracking-wider"><Text>LinkedIn</Text></Link>
+        <Pressable 
+          className="bg-gray-600 py-4 rounded-xl"
+          onPress={() => Linking.openURL('https://github.com/inhamo')}
+        >
+          <Text className="text-lg text-white font-semibold text-center tracking-wider">Github</Text>
+        </Pressable>
+        <Pressable 
+          className="bg-gray-600 py-4 rounded-xl"
+          onPress={() => Linking.openURL('https://www.frontendmentor.io/profile/inhamo')}
+        >
+          <Text className="text-lg text-white font-semibold text-center tracking-wider">Frontend Mentor</Text>
+        </Pressable>
+        <Pressable 
+          className="bg-gray-600 py-4 rounded-xl"
+          onPress={() => Linking.openURL('https://www.linkedin.com/in/innocent-nhamo-467008254/')}
+        >
+          <Text className="text-lg text-white font-semibold text-center tracking-wider">LinkedIn</Text>
+        </Pressable>
       </View>
     </View>
   )
