@@ -21,12 +21,12 @@ export default function Index() {
       <Text className="text-3xl text-white tracking-wide">Innocent Nhamo</Text>
       <Text className="text-lg text-lime-300 tracking-wide mt-1 mb-4">Johannesburg, South Africa</Text>
       <Text className="text-white my-6">'Front-end developer and avid reader.'</Text>
-      <View className="flex flex-col gap-4 w-full mt-6">
-        <Link href="#" className="bg-gray-600 py-4 text-lg text-white rounded-xl font-semibold
+      <View className="flex flex-col gap-6 w-full mt-6">
+        <Link href="https://github.com/inhamo" className="bg-gray-600 py-4 text-lg text-white rounded-xl font-semibold
         text-center tracking-wider"><Text>Github</Text></Link>
-        <Link href="#" className="bg-gray-600 py-4 text-lg text-white rounded-xl font-semibold
+        <Link href="https://www.frontendmentor.io/profile/inhamo" className="bg-gray-600 py-4 text-lg text-white rounded-xl font-semibold
         text-center tracking-wider"><Text>Frontend Mentor</Text></Link>
-        <Link href="#" className="bg-gray-600 py-4 text-lg text-white rounded-xl font-semibold
+        <Link href="https://www.linkedin.com/in/innocent-nhamo-467008254/" className="bg-gray-600 py-4 text-lg text-white rounded-xl font-semibold
         text-center tracking-wider"><Text>LinkedIn</Text></Link>
       </View>
     </View>
